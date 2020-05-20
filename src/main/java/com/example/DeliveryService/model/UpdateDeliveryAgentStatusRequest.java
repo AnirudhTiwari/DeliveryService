@@ -6,9 +6,13 @@ import lombok.Data;
 import lombok.NonNull;
 
 @AllArgsConstructor
-@Data
 @Builder
-public class AssignOrderResponse {
+@Data
+public class UpdateDeliveryAgentStatusRequest {
     @NonNull
-    private final String status;
+    private final Long deliveryAgentId;
+
+    @NonNull
+    private final String deliveryAgentStatus;
+
 }

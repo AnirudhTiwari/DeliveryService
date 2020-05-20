@@ -1,14 +1,12 @@
 package com.example.DeliveryService.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;
 
-@AllArgsConstructor
 @Data
 @Builder
-public class AssignOrderResponse {
+public class GetDeliveryAgentStatusRequest {
     @NonNull
-    private final String status;
+    private final Long deliveryAgentId;
 }

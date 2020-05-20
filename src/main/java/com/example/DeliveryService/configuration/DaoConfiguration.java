@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class DaoConfiguration {
-//    @Bean
-//    DeliveryAgentDao getDeliveryAgentDao() {
-//        return new DeliveryAgentDao();
-//    }
+    @Bean
+    DeliveryAgentDao getDeliveryAgentDao() {
+        return new DeliveryAgentDao();
+    }
 }
